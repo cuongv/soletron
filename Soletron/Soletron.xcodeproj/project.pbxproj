@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED7703313E1CC8700611E6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703213E1CC8700611E6B /* UIKit.framework */; };
+		CED7703513E1CC8700611E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703413E1CC8700611E6B /* Foundation.framework */; };
+		CED7703713E1CC8700611E6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703613E1CC8700611E6B /* CoreGraphics.framework */; };
+		CED7703D13E1CC8700611E6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED7703B13E1CC8700611E6B /* InfoPlist.strings */; };
+		CED7704013E1CC8700611E6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7703F13E1CC8700611E6B /* main.m */; };
+		CED7704313E1CC8700611E6B /* SoletronAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7704213E1CC8700611E6B /* SoletronAppDelegate.m */; };
+		CED7704613E1CC8800611E6B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7704413E1CC8800611E6B /* MainWindow.xib */; };
+		CED7704913E1CC8800611E6B /* SoletronViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7704813E1CC8800611E6B /* SoletronViewController.m */; };
+		CED7704C13E1CC8800611E6B /* SoletronViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7704A13E1CC8800611E6B /* SoletronViewController.xib */; };
+		CED7705313E1CC8800611E6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703213E1CC8700611E6B /* UIKit.framework */; };
+		CED7705413E1CC8800611E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703413E1CC8700611E6B /* Foundation.framework */; };
+		CED7705513E1CC8800611E6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7703613E1CC8700611E6B /* CoreGraphics.framework */; };
+		CED7705D13E1CC8800611E6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED7705B13E1CC8800611E6B /* InfoPlist.strings */; };
+		CED7706013E1CC8800611E6B /* SoletronTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CED7705F13E1CC8800611E6B /* SoletronTests.h */; };
+		CED7706213E1CC8800611E6B /* SoletronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7706113E1CC8800611E6B /* SoletronTests.m */; };
+		CED7706F13E1CD5E00611E6B /* startScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED7706E13E1CD5E00611E6B /* startScreen.jpg */; };
+		CED770A413E208FB00611E6B /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7708F13E208FB00611E6B /* ASIAuthenticationDialog.m */; };
+		CED770A513E208FB00611E6B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709213E208FB00611E6B /* ASIDataCompressor.m */; };
+		CED770A613E208FB00611E6B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709413E208FB00611E6B /* ASIDataDecompressor.m */; };
+		CED770A713E208FB00611E6B /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709613E208FB00611E6B /* ASIDownloadCache.m */; };
+		CED770A813E208FB00611E6B /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709813E208FB00611E6B /* ASIFormDataRequest.m */; };
+		CED770A913E208FB00611E6B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709A13E208FB00611E6B /* ASIHTTPRequest.m */; };
+		CED770AA13E208FB00611E6B /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7709E13E208FB00611E6B /* ASIInputStream.m */; };
+		CED770AB13E208FB00611E6B /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770A013E208FB00611E6B /* ASINetworkQueue.m */; };
+		CED770AC13E208FB00611E6B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770A313E208FB00611E6B /* Reachability.m */; };
+		CED770B213E2090B00611E6B /* GDataXMLElement-Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770AF13E2090B00611E6B /* GDataXMLElement-Extras.m */; };
+		CED770B313E2090B00611E6B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770B113E2090B00611E6B /* GDataXMLNode.m */; };
+		CED770C213E2094C00611E6B /* NSArray+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770B613E2094C00611E6B /* NSArray+Extras.m */; };
+		CED770C313E2094C00611E6B /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770B813E2094C00611E6B /* NSDate+InternetDateTime.m */; };
+		CED770C513E2094C00611E6B /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770BC13E2094C00611E6B /* RSSEntry.m */; };
+		CED770C713E2094C00611E6B /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770C013E2094C00611E6B /* WebViewController.m */; };
+		CED770C813E2094C00611E6B /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED770C113E2094C00611E6B /* WebViewController.xib */; };
+		CED770CA13E209BB00611E6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED770C913E209BB00611E6B /* CFNetwork.framework */; };
+		CED770CC13E209C200611E6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED770CB13E209C100611E6B /* SystemConfiguration.framework */; };
+		CED770CE13E209D200611E6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED770CD13E209D100611E6B /* MobileCoreServices.framework */; };
+		CED770D013E209E900611E6B /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CED770CF13E209E800611E6B /* libz.1.2.3.dylib */; };
+		CED770DE13E21E1300611E6B /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED770DC13E21E1200611E6B /* ForumViewController.m */; };
+		CED770DF13E21E1300611E6B /* ForumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED770DD13E21E1200611E6B /* ForumViewController.xib */; };
+		DD16BFC413FEA60200993E85 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16BFC213FEA60200993E85 /* StoreViewController.m */; };
+		DD16BFC513FEA60200993E85 /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFC313FEA60200993E85 /* StoreViewController.xib */; };
+		DD16BFCA13FEA83A00993E85 /* Top5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16BFC813FEA83A00993E85 /* Top5ViewController.m */; };
+		DD16BFCB13FEA83A00993E85 /* Top5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFC913FEA83A00993E85 /* Top5ViewController.xib */; };
+		DD16BFCD13FEB45C00993E85 /* BannerTopNews.png in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFCC13FEB45C00993E85 /* BannerTopNews.png */; };
+		DD16BFD113FEC45300993E85 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16BFCF13FEC45200993E85 /* NewsViewController.m */; };
+		DD16BFD213FEC45300993E85 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFD013FEC45300993E85 /* NewsViewController.xib */; };
+		DD16BFDD13FED9B700993E85 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16BFDC13FED9B700993E85 /* NewsCell.m */; };
+		DD16BFDF13FEDFDE00993E85 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFDE13FEDFDE00993E85 /* NewsCell.xib */; };
+		DD16BFE113FEE92600993E85 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFE013FEE92600993E85 /* arrow.png */; };
+		DD16BFE313FEEAE600993E85 /* backGroundCell.png in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFE213FEEAE600993E85 /* backGroundCell.png */; };
+		DD16BFE513FEEB9D00993E85 /* rssPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = DD16BFE413FEEB9D00993E85 /* rssPhoto.png */; };
+		DD16C02213FEF85800993E85 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16C01F13FEF85800993E85 /* HTMLNode.m */; };
+		DD16C02313FEF85800993E85 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16C02113FEF85800993E85 /* HTMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED7705613E1CC8800611E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED7702513E1CC8700611E6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED7702D13E1CC8700611E6B;
+			remoteInfo = Soletron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED7702E13E1CC8700611E6B /* Soletron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soletron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED7703213E1CC8700611E6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CED7703413E1CC8700611E6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CED7703613E1CC8700611E6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CED7703A13E1CC8700611E6B /* Soletron-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Soletron-Info.plist"; sourceTree = "<group>"; };
+		CED7703C13E1CC8700611E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CED7703E13E1CC8700611E6B /* Soletron-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Soletron-Prefix.pch"; sourceTree = "<group>"; };
+		CED7703F13E1CC8700611E6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CED7704113E1CC8700611E6B /* SoletronAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoletronAppDelegate.h; sourceTree = "<group>"; };
+		CED7704213E1CC8700611E6B /* SoletronAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoletronAppDelegate.m; sourceTree = "<group>"; };
+		CED7704513E1CC8800611E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CED7704713E1CC8800611E6B /* SoletronViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoletronViewController.h; path = Soletron/SoletronViewController.h; sourceTree = "<group>"; };
+		CED7704813E1CC8800611E6B /* SoletronViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SoletronViewController.m; path = Soletron/SoletronViewController.m; sourceTree = "<group>"; };
+		CED7704B13E1CC8800611E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SoletronViewController.xib; sourceTree = "<group>"; };
+		CED7705213E1CC8800611E6B /* SoletronTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoletronTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED7705A13E1CC8800611E6B /* SoletronTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoletronTests-Info.plist"; sourceTree = "<group>"; };
+		CED7705C13E1CC8800611E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CED7705E13E1CC8800611E6B /* SoletronTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoletronTests-Prefix.pch"; sourceTree = "<group>"; };
+		CED7705F13E1CC8800611E6B /* SoletronTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoletronTests.h; sourceTree = "<group>"; };
+		CED7706113E1CC8800611E6B /* SoletronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoletronTests.m; sourceTree = "<group>"; };
+		CED7706E13E1CD5E00611E6B /* startScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = startScreen.jpg; sourceTree = "<group>"; };
+		CED7708E13E208FB00611E6B /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CED7708F13E208FB00611E6B /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		CED7709013E208FB00611E6B /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		CED7709113E208FB00611E6B /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		CED7709213E208FB00611E6B /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		CED7709313E208FB00611E6B /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		CED7709413E208FB00611E6B /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		CED7709513E208FB00611E6B /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		CED7709613E208FB00611E6B /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		CED7709713E208FB00611E6B /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		CED7709813E208FB00611E6B /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		CED7709913E208FB00611E6B /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		CED7709A13E208FB00611E6B /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		CED7709B13E208FB00611E6B /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CED7709C13E208FB00611E6B /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CED7709D13E208FB00611E6B /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		CED7709E13E208FB00611E6B /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		CED7709F13E208FB00611E6B /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		CED770A013E208FB00611E6B /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		CED770A113E208FB00611E6B /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CED770A213E208FB00611E6B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CED770A313E208FB00611E6B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CED770AE13E2090B00611E6B /* GDataXMLElement-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLElement-Extras.h"; sourceTree = "<group>"; };
+		CED770AF13E2090B00611E6B /* GDataXMLElement-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLElement-Extras.m"; sourceTree = "<group>"; };
+		CED770B013E2090B00611E6B /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		CED770B113E2090B00611E6B /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		CED770B513E2094C00611E6B /* NSArray+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extras.h"; sourceTree = "<group>"; };
+		CED770B613E2094C00611E6B /* NSArray+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extras.m"; sourceTree = "<group>"; };
+		CED770B713E2094C00611E6B /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		CED770B813E2094C00611E6B /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		CED770BB13E2094C00611E6B /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
+		CED770BC13E2094C00611E6B /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
+		CED770BF13E2094C00611E6B /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CED770C013E2094C00611E6B /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		CED770C113E2094C00611E6B /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		CED770C913E209BB00611E6B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CED770CB13E209C100611E6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CED770CD13E209D100611E6B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CED770CF13E209E800611E6B /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		CED770DB13E21E1100611E6B /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
+		CED770DC13E21E1200611E6B /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
+		CED770DD13E21E1200611E6B /* ForumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForumViewController.xib; sourceTree = "<group>"; };
+		DD16BFC113FEA60200993E85 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		DD16BFC213FEA60200993E85 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		DD16BFC313FEA60200993E85 /* StoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
+		DD16BFC713FEA83A00993E85 /* Top5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Top5ViewController.h; sourceTree = "<group>"; };
+		DD16BFC813FEA83A00993E85 /* Top5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top5ViewController.m; sourceTree = "<group>"; };
+		DD16BFC913FEA83A00993E85 /* Top5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Top5ViewController.xib; sourceTree = "<group>"; };
+		DD16BFCC13FEB45C00993E85 /* BannerTopNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BannerTopNews.png; sourceTree = "<group>"; };
+		DD16BFCE13FEC45200993E85 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		DD16BFCF13FEC45200993E85 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		DD16BFD013FEC45300993E85 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		DD16BFDB13FED9B700993E85 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		DD16BFDC13FED9B700993E85 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		DD16BFDE13FEDFDE00993E85 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		DD16BFE013FEE92600993E85 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		DD16BFE213FEEAE600993E85 /* backGroundCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundCell.png; sourceTree = "<group>"; };
+		DD16BFE413FEEB9D00993E85 /* rssPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rssPhoto.png; sourceTree = "<group>"; };
+		DD16C01E13FEF85800993E85 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		DD16C01F13FEF85800993E85 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		DD16C02013FEF85800993E85 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		DD16C02113FEF85800993E85 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED7702B13E1CC8700611E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED770D013E209E900611E6B /* libz.1.2.3.dylib in Frameworks */,
+				CED770CE13E209D200611E6B /* MobileCoreServices.framework in Frameworks */,
+				CED770CC13E209C200611E6B /* SystemConfiguration.framework in Frameworks */,
+				CED770CA13E209BB00611E6B /* CFNetwork.framework in Frameworks */,
+				CED7703313E1CC8700611E6B /* UIKit.framework in Frameworks */,
+				CED7703513E1CC8700611E6B /* Foundation.framework in Frameworks */,
+				CED7703713E1CC8700611E6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED7704E13E1CC8800611E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7705313E1CC8800611E6B /* UIKit.framework in Frameworks */,
+				CED7705413E1CC8800611E6B /* Foundation.framework in Frameworks */,
+				CED7705513E1CC8800611E6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED7702313E1CC8700611E6B = {
+			isa = PBXGroup;
+			children = (
+				CED7708C13E2088A00611E6B /* Other Class */,
+				CED770B413E2093000611E6B /* My Class */,
+				CED7703813E1CC8700611E6B /* AppDelegate */,
+				CED7707013E1DD2C00611E6B /* ViewController */,
+				CED7707113E1DDC200611E6B /* Interface */,
+				CED7706D13E1CD2500611E6B /* Resource */,
+				CED7705813E1CC8800611E6B /* SoletronTests */,
+				CED7703113E1CC8700611E6B /* Frameworks */,
+				CED7702F13E1CC8700611E6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED7702F13E1CC8700611E6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED7702E13E1CC8700611E6B /* Soletron.app */,
+				CED7705213E1CC8800611E6B /* SoletronTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED7703113E1CC8700611E6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED770CF13E209E800611E6B /* libz.1.2.3.dylib */,
+				CED770CD13E209D100611E6B /* MobileCoreServices.framework */,
+				CED770CB13E209C100611E6B /* SystemConfiguration.framework */,
+				CED770C913E209BB00611E6B /* CFNetwork.framework */,
+				CED7703213E1CC8700611E6B /* UIKit.framework */,
+				CED7703413E1CC8700611E6B /* Foundation.framework */,
+				CED7703613E1CC8700611E6B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED7703813E1CC8700611E6B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CED7704113E1CC8700611E6B /* SoletronAppDelegate.h */,
+				CED7704213E1CC8700611E6B /* SoletronAppDelegate.m */,
+				CED7703913E1CC8700611E6B /* Supporting Files */,
+			);
+			name = AppDelegate;
+			path = Soletron;
+			sourceTree = "<group>";
+		};
+		CED7703913E1CC8700611E6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED7703A13E1CC8700611E6B /* Soletron-Info.plist */,
+				CED7703B13E1CC8700611E6B /* InfoPlist.strings */,
+				CED7703E13E1CC8700611E6B /* Soletron-Prefix.pch */,
+				CED7703F13E1CC8700611E6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CED7705813E1CC8800611E6B /* SoletronTests */ = {
+			isa = PBXGroup;
+			children = (
+				CED7705F13E1CC8800611E6B /* SoletronTests.h */,
+				CED7706113E1CC8800611E6B /* SoletronTests.m */,
+			);
+			path = SoletronTests;
+			sourceTree = "<group>";
+		};
+		CED7705913E1CC8800611E6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED7705A13E1CC8800611E6B /* SoletronTests-Info.plist */,
+				CED7705B13E1CC8800611E6B /* InfoPlist.strings */,
+				CED7705E13E1CC8800611E6B /* SoletronTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = SoletronTests;
+			sourceTree = "<group>";
+		};
+		CED7706D13E1CD2500611E6B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DD16BFE413FEEB9D00993E85 /* rssPhoto.png */,
+				DD16BFE213FEEAE600993E85 /* backGroundCell.png */,
+				DD16BFE013FEE92600993E85 /* arrow.png */,
+				DD16BFCC13FEB45C00993E85 /* BannerTopNews.png */,
+				CED7706E13E1CD5E00611E6B /* startScreen.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		CED7707013E1DD2C00611E6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CED7704713E1CC8800611E6B /* SoletronViewController.h */,
+				CED7704813E1CC8800611E6B /* SoletronViewController.m */,
+				CED770DB13E21E1100611E6B /* ForumViewController.h */,
+				CED770DC13E21E1200611E6B /* ForumViewController.m */,
+				CED770BF13E2094C00611E6B /* WebViewController.h */,
+				CED770C013E2094C00611E6B /* WebViewController.m */,
+				DD16BFC113FEA60200993E85 /* StoreViewController.h */,
+				DD16BFC213FEA60200993E85 /* StoreViewController.m */,
+				DD16BFC713FEA83A00993E85 /* Top5ViewController.h */,
+				DD16BFC813FEA83A00993E85 /* Top5ViewController.m */,
+				DD16BFCE13FEC45200993E85 /* NewsViewController.h */,
+				DD16BFCF13FEC45200993E85 /* NewsViewController.m */,
+				CED7705913E1CC8800611E6B /* Supporting Files */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CED7707113E1DDC200611E6B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				DD16BFD013FEC45300993E85 /* NewsViewController.xib */,
+				DD16BFC913FEA83A00993E85 /* Top5ViewController.xib */,
+				DD16BFC313FEA60200993E85 /* StoreViewController.xib */,
+				CED770DD13E21E1200611E6B /* ForumViewController.xib */,
+				CED770C113E2094C00611E6B /* WebViewController.xib */,
+				CED7704413E1CC8800611E6B /* MainWindow.xib */,
+				CED7704A13E1CC8800611E6B /* SoletronViewController.xib */,
+				DD16BFDE13FEDFDE00993E85 /* NewsCell.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		CED7708C13E2088A00611E6B /* Other Class */ = {
+			isa = PBXGroup;
+			children = (
+				DD16C01D13FEF84600993E85 /* Html */,
+				CED770AD13E2090B00611E6B /* GDataXML */,
+				CED7708D13E208FB00611E6B /* ASIHTTPRequest */,
+			);
+			name = "Other Class";
+			sourceTree = "<group>";
+		};
+		CED7708D13E208FB00611E6B /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CED7708E13E208FB00611E6B /* ASIAuthenticationDialog.h */,
+				CED7708F13E208FB00611E6B /* ASIAuthenticationDialog.m */,
+				CED7709013E208FB00611E6B /* ASICacheDelegate.h */,
+				CED7709113E208FB00611E6B /* ASIDataCompressor.h */,
+				CED7709213E208FB00611E6B /* ASIDataCompressor.m */,
+				CED7709313E208FB00611E6B /* ASIDataDecompressor.h */,
+				CED7709413E208FB00611E6B /* ASIDataDecompressor.m */,
+				CED7709513E208FB00611E6B /* ASIDownloadCache.h */,
+				CED7709613E208FB00611E6B /* ASIDownloadCache.m */,
+				CED7709713E208FB00611E6B /* ASIFormDataRequest.h */,
+				CED7709813E208FB00611E6B /* ASIFormDataRequest.m */,
+				CED7709913E208FB00611E6B /* ASIHTTPRequest.h */,
+				CED7709A13E208FB00611E6B /* ASIHTTPRequest.m */,
+				CED7709B13E208FB00611E6B /* ASIHTTPRequestConfig.h */,
+				CED7709C13E208FB00611E6B /* ASIHTTPRequestDelegate.h */,
+				CED7709D13E208FB00611E6B /* ASIInputStream.h */,
+				CED7709E13E208FB00611E6B /* ASIInputStream.m */,
+				CED7709F13E208FB00611E6B /* ASINetworkQueue.h */,
+				CED770A013E208FB00611E6B /* ASINetworkQueue.m */,
+				CED770A113E208FB00611E6B /* ASIProgressDelegate.h */,
+				CED770A213E208FB00611E6B /* Reachability.h */,
+				CED770A313E208FB00611E6B /* Reachability.m */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		CED770AD13E2090B00611E6B /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				CED770AE13E2090B00611E6B /* GDataXMLElement-Extras.h */,
+				CED770AF13E2090B00611E6B /* GDataXMLElement-Extras.m */,
+				CED770B013E2090B00611E6B /* GDataXMLNode.h */,
+				CED770B113E2090B00611E6B /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		CED770B413E2093000611E6B /* My Class */ = {
+			isa = PBXGroup;
+			children = (
+				CED770B513E2094C00611E6B /* NSArray+Extras.h */,
+				CED770B613E2094C00611E6B /* NSArray+Extras.m */,
+				CED770B713E2094C00611E6B /* NSDate+InternetDateTime.h */,
+				CED770B813E2094C00611E6B /* NSDate+InternetDateTime.m */,
+				CED770BB13E2094C00611E6B /* RSSEntry.h */,
+				CED770BC13E2094C00611E6B /* RSSEntry.m */,
+				DD16BFDB13FED9B700993E85 /* NewsCell.h */,
+				DD16BFDC13FED9B700993E85 /* NewsCell.m */,
+			);
+			name = "My Class";
+			sourceTree = "<group>";
+		};
+		DD16C01D13FEF84600993E85 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				DD16C01E13FEF85800993E85 /* HTMLNode.h */,
+				DD16C01F13FEF85800993E85 /* HTMLNode.m */,
+				DD16C02013FEF85800993E85 /* HTMLParser.h */,
+				DD16C02113FEF85800993E85 /* HTMLParser.m */,
+			);
+			name = Html;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED7702D13E1CC8700611E6B /* Soletron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED7706513E1CC8800611E6B /* Build configuration list for PBXNativeTarget "Soletron" */;
+			buildPhases = (
+				CED7702A13E1CC8700611E6B /* Sources */,
+				CED7702B13E1CC8700611E6B /* Frameworks */,
+				CED7702C13E1CC8700611E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Soletron;
+			productName = Soletron;
+			productReference = CED7702E13E1CC8700611E6B /* Soletron.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED7705113E1CC8800611E6B /* SoletronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED7706813E1CC8800611E6B /* Build configuration list for PBXNativeTarget "SoletronTests" */;
+			buildPhases = (
+				CED7704D13E1CC8800611E6B /* Sources */,
+				CED7704E13E1CC8800611E6B /* Frameworks */,
+				CED7704F13E1CC8800611E6B /* Resources */,
+				CED7705013E1CC8800611E6B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED7705713E1CC8800611E6B /* PBXTargetDependency */,
+			);
+			name = SoletronTests;
+			productName = SoletronTests;
+			productReference = CED7705213E1CC8800611E6B /* SoletronTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED7702513E1CC8700611E6B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CED7702813E1CC8700611E6B /* Build configuration list for PBXProject "Soletron" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CED7702313E1CC8700611E6B;
+			productRefGroup = CED7702F13E1CC8700611E6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED7702D13E1CC8700611E6B /* Soletron */,
+				CED7705113E1CC8800611E6B /* SoletronTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED7702C13E1CC8700611E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7703D13E1CC8700611E6B /* InfoPlist.strings in Resources */,
+				CED7704613E1CC8800611E6B /* MainWindow.xib in Resources */,
+				CED7704C13E1CC8800611E6B /* SoletronViewController.xib in Resources */,
+				CED7706F13E1CD5E00611E6B /* startScreen.jpg in Resources */,
+				CED770C813E2094C00611E6B /* WebViewController.xib in Resources */,
+				CED770DF13E21E1300611E6B /* ForumViewController.xib in Resources */,
+				DD16BFC513FEA60200993E85 /* StoreViewController.xib in Resources */,
+				DD16BFCB13FEA83A00993E85 /* Top5ViewController.xib in Resources */,
+				DD16BFCD13FEB45C00993E85 /* BannerTopNews.png in Resources */,
+				DD16BFD213FEC45300993E85 /* NewsViewController.xib in Resources */,
+				DD16BFDF13FEDFDE00993E85 /* NewsCell.xib in Resources */,
+				DD16BFE113FEE92600993E85 /* arrow.png in Resources */,
+				DD16BFE313FEEAE600993E85 /* backGroundCell.png in Resources */,
+				DD16BFE513FEEB9D00993E85 /* rssPhoto.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED7704F13E1CC8800611E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7705D13E1CC8800611E6B /* InfoPlist.strings in Resources */,
+				CED7706013E1CC8800611E6B /* SoletronTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CED7705013E1CC8800611E6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED7702A13E1CC8700611E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7704013E1CC8700611E6B /* main.m in Sources */,
+				CED7704313E1CC8700611E6B /* SoletronAppDelegate.m in Sources */,
+				CED7704913E1CC8800611E6B /* SoletronViewController.m in Sources */,
+				CED770A413E208FB00611E6B /* ASIAuthenticationDialog.m in Sources */,
+				CED770A513E208FB00611E6B /* ASIDataCompressor.m in Sources */,
+				CED770A613E208FB00611E6B /* ASIDataDecompressor.m in Sources */,
+				CED770A713E208FB00611E6B /* ASIDownloadCache.m in Sources */,
+				CED770A813E208FB00611E6B /* ASIFormDataRequest.m in Sources */,
+				CED770A913E208FB00611E6B /* ASIHTTPRequest.m in Sources */,
+				CED770AA13E208FB00611E6B /* ASIInputStream.m in Sources */,
+				CED770AB13E208FB00611E6B /* ASINetworkQueue.m in Sources */,
+				CED770AC13E208FB00611E6B /* Reachability.m in Sources */,
+				CED770B213E2090B00611E6B /* GDataXMLElement-Extras.m in Sources */,
+				CED770B313E2090B00611E6B /* GDataXMLNode.m in Sources */,
+				CED770C213E2094C00611E6B /* NSArray+Extras.m in Sources */,
+				CED770C313E2094C00611E6B /* NSDate+InternetDateTime.m in Sources */,
+				CED770C513E2094C00611E6B /* RSSEntry.m in Sources */,
+				CED770C713E2094C00611E6B /* WebViewController.m in Sources */,
+				CED770DE13E21E1300611E6B /* ForumViewController.m in Sources */,
+				DD16BFC413FEA60200993E85 /* StoreViewController.m in Sources */,
+				DD16BFCA13FEA83A00993E85 /* Top5ViewController.m in Sources */,
+				DD16BFD113FEC45300993E85 /* NewsViewController.m in Sources */,
+				DD16BFDD13FED9B700993E85 /* NewsCell.m in Sources */,
+				DD16C02213FEF85800993E85 /* HTMLNode.m in Sources */,
+				DD16C02313FEF85800993E85 /* HTMLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED7704D13E1CC8800611E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7706213E1CC8800611E6B /* SoletronTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED7705713E1CC8800611E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED7702D13E1CC8700611E6B /* Soletron */;
+			targetProxy = CED7705613E1CC8800611E6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CED7703B13E1CC8700611E6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED7703C13E1CC8700611E6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CED7704413E1CC8800611E6B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED7704513E1CC8800611E6B /* en */,
+			);
+			name = MainWindow.xib;
+			path = Soletron;
+			sourceTree = "<group>";
+		};
+		CED7704A13E1CC8800611E6B /* SoletronViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED7704B13E1CC8800611E6B /* en */,
+			);
+			name = SoletronViewController.xib;
+			path = Soletron;
+			sourceTree = "<group>";
+		};
+		CED7705B13E1CC8800611E6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED7705C13E1CC8800611E6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED7706313E1CC8800611E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CED7706413E1CC8800611E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CED7706613E1CC8800611E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Soletron/Soletron-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Soletron/Soletron-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CED7706713E1CC8800611E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Soletron/Soletron-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Soletron/Soletron-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CED7706913E1CC8800611E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Soletron.app/Soletron";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoletronTests/SoletronTests-Prefix.pch";
+				INFOPLIST_FILE = "SoletronTests/SoletronTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CED7706A13E1CC8800611E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Soletron.app/Soletron";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoletronTests/SoletronTests-Prefix.pch";
+				INFOPLIST_FILE = "SoletronTests/SoletronTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED7702813E1CC8700611E6B /* Build configuration list for PBXProject "Soletron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED7706313E1CC8800611E6B /* Debug */,
+				CED7706413E1CC8800611E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED7706513E1CC8800611E6B /* Build configuration list for PBXNativeTarget "Soletron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED7706613E1CC8800611E6B /* Debug */,
+				CED7706713E1CC8800611E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED7706813E1CC8800611E6B /* Build configuration list for PBXNativeTarget "SoletronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED7706913E1CC8800611E6B /* Debug */,
+				CED7706A13E1CC8800611E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED7702513E1CC8700611E6B /* Project object */;
+}
